@@ -1,5 +1,44 @@
+/* PIXEL TABLET */
 body {
+    @media(max-width: 1024px) {
+        h1 {
+            font-size: 20px;
+        }
+        padding: 10px;
+        width: 100%;
+        font-size: larger;
 
-    background-color: blue;
-    
+        /*img-size: 70%;*/
+        img {
+            width: 60%;
+        }
+
+        background-color: orangered;
+    }
+
+    /* PIXEL CELULAR*/
+
+    @media(max-width: 768px) {
+    body {
+        margin: 50px;;
+    }
+        padding: 10px;
+        width: 10%;
+        font-size: medium;
+
+        img {
+            width: 60%;
+        }
+
+        background-color: rgb(207, 93, 0);
+    }
+
+    /* DESING BOTAO BUSCAR */
+    button {
+        padding: 8px;
+        border-radius: 20%;
+        border-color: black;
+        background-color: rgb(245, 108, 59);
+
+    }
 }
