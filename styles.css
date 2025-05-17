@@ -1,44 +1,90 @@
-/* PIXEL TABLET */
 body {
-    @media(max-width: 1024px) {
-        h1 {
-            font-size: 20px;
-        }
-        padding: 10px;
-        width: 100%;
-        font-size: larger;
-
-        /*img-size: 70%;*/
-        img {
-            width: 60%;
-        }
-
-        background-color: orangered;
-    }
-
-    /* PIXEL CELULAR*/
-
-    @media(max-width: 768px) {
-    body {
-        margin: 50px;;
-    }
-        padding: 10px;
-        width: 10%;
-        font-size: medium;
-
-        img {
-            width: 60%;
-        }
-
-        background-color: rgb(207, 93, 0);
-    }
-
-    /* DESING BOTAO BUSCAR */
-    button {
-        padding: 8px;
-        border-radius: 20%;
-        border-color: black;
-        background-color: rgb(245, 108, 59);
-
-    }
+  background: linear-gradient(270deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+  background-size: 600% 600%;
+  animation: animarFundo 15s ease infinite;
 }
+
+@keyframes animarFundo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+input::placeholder {
+  color: white;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+input:focus::placeholder {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+input {
+  background: linear-gradient(270deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+  background-size: 600% 600%;
+  animation: animarFundo 15s ease infinite;
+  border: 6px solid white;  /* Borda espessa */
+  border-radius: 20px;         /* Bordas arredondadas */
+  padding: 10px;               /* Espaço interno */
+  height: 40px;                /* Definindo a altura */
+  width: 150px;                /* Definindo a largura */
+}
+
+button::placeholder {
+  color: white;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+button:focus::placeholder {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+button {
+  background: linear-gradient(270deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+  background-size: 600% 600%;
+  animation: animarFundo 15s ease infinite;
+  border: 6px solid white;  /* Borda espessa */
+  border-radius: 20px;         /* Bordas arredondadas */
+  padding: 10px;               /* Espaço interno */
+  height: 60px;                /* Definindo a altura */
+  width: 150px;                /* Definindo a largura */
+  color: white;
+}
+
+#pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokemon-card {
+  width: 200px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;     /* Fonte moderna e limpa */
+  font-size: 36px;                      /* Tamanho grande do título */
+  color: white;                       /* Cor amarela Pokémon */
+  text-align: center;                   /* Centraliza o título na página */
+ text-shadow: linear-gradient(270deg, rgb(0, 255, 76), rgb(255, 0, 55), rgb(255, 153, 0)); /* Sombra azul no texto (cor do Pokémon) */
+  margin-bottom: 20px;                 /* Espaço abaixo do título */
+}
+
+
+
