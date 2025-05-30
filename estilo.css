@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color:#91a566;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+.card{
+    text-align: center;
+    background-color: #c9df8a;
+    padding: 20px;
+    border: 1px solid aliceblue;
+    border-radius: 100%;
+}
+
+body{
+    background-color:#bed084 ;
+    padding: 20px;
+     text-align: center;
+     margin: 1;
+}
+
+h1{
+    background-color: #bed084;
+    border-radius: 20%;
+
+    color: white;
+}
+
+h2{
+    background-color: #bed084;
+    color: white; 
+}
+
+p{
+color: white; 
+}
+
+#bubassaroCard{
+    background-color: red;
+}
